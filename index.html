@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>CodeEditor</title>
+  <link rel="Stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8"/>
+  <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="logic.js"></script>
+</head>
+<body>
+  <header>
+    <div id='title'>
+      <h1>CodeEditor</h1>
+    </div>
+    <nav id='menu'>
+      <ul>
+        <li id="list1" class="selected">HTML</li>
+        <li id="list2" class="selected">CSS</li>
+        <li id="list3" class="selected">JS</li>
+        <li id="list4" class="selected">Result</li>
+      </ul>
+    </nav>
+    <button>Run</button>
+  </header>
+  <div id="container">
+    <div id="html">
+      <div class="icon">
+        <p>HTML</p>
+      </div>
+      <textarea class="textArea" id="htmlCode" type="text"></textarea>
+    </div>
+    <div id="css">
+      <div class="icon">
+        <p>CSS</p>
+      </div>
+      <textarea class="textArea" id="cssCode" type="text"></textarea>
+    </div>
+    <div id="js">
+      <div class="icon">
+        <p>JS</p>
+      </div>
+      <textarea class="textArea" id="jsCode" type="text"></textarea>
+    </div>
+    <div id="result">
+      <div class="icon">
+        <p>Result</p>
+      </div>
+      <iframe id="section4"></iframe>
+    </div>
+  </div>
+</body>
+</html>
